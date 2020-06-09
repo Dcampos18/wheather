@@ -27,7 +27,7 @@ export default class App extends Component {
     const {ciudad, pais} = this.state.consulta
     if(!ciudad || !pais) return null
 
-    const appId = 'b63fb35ea2cf2514b543b940ebd23711'
+    const appId = 'Your API KEY'
     let url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appId=${appId}`
     
     console.log(url)
